@@ -1,0 +1,40 @@
+### all
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzcm5hbWUiLCJpZCI6IjVmMGUxMTNjM2ViNWE2YmEyZTZlNmNlZSIsImlhdCI6MTU5NDg5ODkxNX0.P617u7dywpT9sqiP-zbqXeOxtj4p1eu8o82bMfDrbHs
+
+{
+  "title": "title",
+  "author": "author",
+  "url": "https://www.google.com",
+  "likes": 2,
+  "username": "usrname"
+}
+### Miss author
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+  "title": "title",
+  "url": "https://www.google.com",
+  "likes": 2
+}
+
+### 
+GET http://localhost:3001/api/blogs
+
+###
+PUT http://localhost:3001/api/blogs/5f0cab666c80a18cd21a803f
+Content-Type: application/json
+
+{
+  "title": "new"
+}
+
+###
+DELETE http://localhost:3001/api/blogs/5f0ce37b817db2a8bdfd5162
+###
+GET http://localhost:3001/api/blogs
+
+###
+GET http://localhost:3001/api/unknown

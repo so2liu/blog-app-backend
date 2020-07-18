@@ -1,0 +1,13 @@
+### 
+GET http://localhost:3001/api/auth/validate
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzcm5hbWUiLCJpZCI6IjVmMGUxMTNjM2ViNWE2YmEyZTZlNmNlZSIsImlhdCI6MTU5NDg5ODkxNX0.P617u7dywpT9sqiP-zbqXeOxtj4p1eu8o82bMfDrbHs
+
+###
+POST http://localhost:3001/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "usrname",
+  "password": "pwd"
+}

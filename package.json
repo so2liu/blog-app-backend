@@ -1,0 +1,49 @@
+{
+  "name": "blog-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --watchAll --runInBand",
+    "prebuild": "cross-env tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "cross-env tsc",
+    "prestart": "cross-env npm run build",
+    "start": "cross-env node .",
+    "dev": "cross-env ts-node-dev src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mongoose": "^5.7.31",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.19",
+    "mongoose": "^5.9.23",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7",
+    "@types/bcrypt": "^3.0.0",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.7",
+    "@types/jest": "^26.0.4",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/lodash": "^4.14.157",
+    "@types/mongoose-unique-validator": "^1.0.4",
+    "@types/morgan": "^1.9.1",
+    "@types/supertest": "^2.0.10"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "mongodb-memory-server": "^6.6.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "^26.1.2",
+    "ts-node-dev": "^1.0.0-pre.51",
+    "tslint": "^6.1.2"
+  }
+}

@@ -1,0 +1,15 @@
+### New User
+POST  http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "usrname6",
+  "password": "pwd",
+  "displayName": "Oh My Gosh"
+}
+
+### Users
+GET http://localhost:3001/api/users
+
+### Delete User
+DELETE  http://localhost:3001/api/users/testUserName
